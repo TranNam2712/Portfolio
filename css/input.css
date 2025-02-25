@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+.poppins {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* header nav */
+.ct-nav {
+  @apply font-medium flex-col md:flex-row absolute md:relative top-20 md:top-0 left-0 right-0 bg-white md:bg-transparent w-full md:w-auto items-center gap-4 text-gray-600 capitalize;
+}
+
+.ct-nav-item {
+  @apply text-gray-600 hover:text-sky-600 cursor-pointer w-full md:w-auto;
+}
+
+/* banner */
+.ct-banner-social {
+  @apply text-base flex items-center justify-center gap-2 bg-white px-4 py-2 rounded-full hover:shadow-lg transition duration-300 ease-in-out;
+}
+
+/* skills */
+.ct-skill-progress {
+  @apply h-2 bg-[#eef2ff] rounded-full relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-2 after:rounded-full;
+}

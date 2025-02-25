@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" href="./assets/icon.jpg" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="poppins">
+    <div class="root">
+      <!-- header -->
+      <header>
+        <!-- navigation -->
+        <nav
+          class="h-20 flex justify-between items-center px-4 md:px-20 py-4 fixed top-0 left-0 right-0 bg-white/80 backdrop-blur z-50"
+        >
+          <!-- logo -->
+          <a class="text-2xl font-semibold tracking-wider text-sky-600" href="#"
+            >Portfolio</a
+          >
+
+          <!-- Mobile menu button -->
+          <i
+            class="fa-solid fa-bars md:text-[0px] lg:text-[0px] flex items-center px-3 py-2 text-gray-600 hover:text-sky-600"
+            id="mobile-menu-button"
+          ></i>
+
+          <!-- Navigation links -->
+          <ul id="nav-links" class="hidden md:flex ct-nav">
+            <li class="ct-nav-item w-full md:w-auto">
+              <a
+                class="block py-2 px-4 hover:bg-gray-100 md:hover:bg-transparent"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="ct-nav-item w-full md:w-auto">
+              <a
+                class="block py-2 px-4 hover:bg-gray-100 md:hover:bg-transparent"
+                href="#"
+                >Skill</a
+              >
+            </li>
+            <li class="ct-nav-item w-full md:w-auto">
+              <a
+                class="block py-2 px-4 hover:bg-gray-100 md:hover:bg-transparent"
+                href="#"
+                >Experience</a
+              >
+            </li>
+            <li class="ct-nav-item w-full md:w-auto">
+              <a
+                class="block py-2 px-4 hover:bg-gray-100 md:hover:bg-transparent"
+                href="#"
+                >Projects</a
+              >
+            </li>
+            <li class="ct-nav-item w-full md:w-auto">
+              <a
+                class="block py-2 px-4 hover:bg-gray-100 md:hover:bg-transparent"
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- banner -->
+      <div
+        class="bg-[#E0ACEF] bg-linear-135 from-[#E0ACEF] to-[#FFAFDF] mt-20 min-h-96 px-20 md:px-20 py-4 flex justify-center items-center"
+      >
+        <div
+          class="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-8 h-full w-full lg:w-[80%] mx-auto"
+        >
+          <!-- avatar -->
+          <div class="border-4 border-white rounded-full shadow-lg">
+            <img
+              src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-1/480575187_1338945550460327_76545680919555457_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeF6tVJVXXfo3cDDoDkKvcCp6n7PFQxn8WDqfs8VDGfxYIchwk25CpiSYZHCvIrIh7lIEqhYJHKAnr5euEfVnHDR&_nc_ohc=KH3FBHrXuewQ7kNvgFeHQeO&_nc_oc=Adi8U_MB6tDFDBPYqx33lkNa3_6XxSWOpk3yan8oWDZ7FZRF0MDd9JSv36PYIJFj0XGT2NIlNZN5IX_B5ZHYv2Z6&_nc_zt=24&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=AFIH_t8Btt1SI3e-GOtd9KS&oh=00_AYAOFY7FsC4ixkQUGazG_XOGl-eZpPe5a3RIKkrhy8noqQ&oe=67C3C9D0"
+              alt=""
+              class="w-40 h-40 rounded-full"
+            />
+          </div>
+
+          <!-- content -->
+          <div class="flex-1 text-center md:text-left lg:text-left">
+            <!-- info -->
+            <h1 class="text-4xl font-semibold tracking-wider mb-2">Trần Nam</h1>
+            <p class="font-semibold text-[#4f46e5] mb-4">Web Developer</p>
+
+            <!-- description -->
+            <p class="mb-8 text-gray-600">
+              Hello! I'm Trần Nam, an aspiring web developer passionate about
+              creating user-friendly websites. While I'm just starting out and
+              lack formal experience, I have been learning HTML, CSS, and
+              JavaScript through online courses and personal projects. I'm eager
+              to apply my skills and grow in a collaborative environment.
+            </p>
+
+            <!-- social -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6 text-[14px] lg:text-lg"
+            >
+              <!-- email -->
+              <a class="ct-banner-social" href="mailto:namtran96hth@gmail.com">
+                <i class="fa-regular fa-envelope text-gray-600"></i>
+                <span class="text-gray-600">namtran96hth@gmail.com</span>
+              </a>
+
+              <!-- phone -->
+              <a
+                class="ct-banner-social"
+                href="tel:+84976290389"
+                target="_blank"
+              >
+                <i class="fa-solid fa-phone text-gray-600"></i>
+                <span class="text-gray-600">(+84) 976 290 389</span>
+              </a>
+
+              <!-- github -->
+              <a
+                class="ct-banner-social"
+                href="https://github.com/TranNam2712"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github text-gray-600"></i>
+                <span class="text-gray-600">TranNam2712</span>
+              </a>
+            </div>
+
+            <!-- skills -->
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 font-semibold"
+            >
+              <span
+                class="p-1 bg-[#eef2ff] block text-center text-[#574fe6] rounded-full"
+                >React</span
+              >
+              <span
+                class="p-1 bg-[#eef2ff] block text-center text-[#574fe6] rounded-full"
+                >Node.js</span
+              >
+              <span
+                class="p-1 bg-[#eef2ff] block text-center text-[#574fe6] rounded-full"
+                >TypeScript</span
+              >
+              <span
+                class="p-1 bg-[#eef2ff] block text-center text-[#574fe6] rounded-full"
+                >MongoDB</span
+              >
+              <span
+                class="p-1 bg-[#eef2ff] block text-center text-[#574fe6] rounded-full"
+                >Tailwind</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main -->
+      <div class="w-[80%] mx-auto my-20">
+        <!-- skills container -->
+        <div class="mb-20">
+          <h2 class="text-3xl font-semibold tracking-wider mb-4">Skills</h2>
+          <p class="mb-14 text-gray-600 text-[14px]">
+            A comprehensive overview of my technical expertise and proficiency
+            levels
+          </p>
+
+          <!-- skills -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            <!-- Programming Languages -->
+            <div class="p-4 border border-gray-200 rounded-xl">
+              <!-- title -->
+              <div
+                class="grid grid-cols-[auto_1fr] gap-4 items-center p-4 rounded-lg border border-gray-200 shadow-sm mb-4"
+              >
+                <i
+                  class="fa-solid fa-code bg-[#eef2ff] p-4 rounded-xl text-[#574fe6]"
+                ></i>
+                <div>
+                  <h2 class="font-semibold text-gray-800">
+                    Programming Languages
+                  </h2>
+                  <p class="text-gray-600 text-sm">
+                    Core programming languages used in development
+                  </p>
+                </div>
+              </div>
+
+              <!-- skill -->
+              <div class="flex flex-col gap-2 mb-4 group">
+                <h1>JavaScript</h1>
+                <div
+                  class="ct-skill-progress after:bg-[#22c55e] after:w-full"
+                ></div>
+
+                <!-- skill placeholder -->
+                <span
+                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                >
+                  >ES6, TypeScript, Node.js</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 mb-4 group">
+                <h1>Python</h1>
+                <div
+                  class="ct-skill-progress after:bg-[#3b82f6] after:w-2/3"
+                ></div>
+
+                <!-- skill placeholder -->
+                <span
+                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                >
+                  >Django, Flask, FastAPI, Deep Learning</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 mb-4 group">
+                <h1>Java</h1>
+                <div
+                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/3"
+                ></div>
+
+                <!-- skill placeholder -->
+                <span
+                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                >
+                  >Spring Boot, Hibernate</span
+                >
+              </div>
+            </div>
+
+            <!-- Web Technologies -->
+            <div class="p-4 border border-gray-200 rounded-xl">
+              <!-- title -->
+              <div
+                class="grid grid-cols-[auto_1fr] gap-4 items-center p-4 rounded-lg border border-gray-200 shadow-sm mb-4"
+              >
+                <i
+                  class="fa-solid fa-globe bg-[#eef2ff] p-4 rounded-xl text-[#574fe6]"
+                ></i>
+                <div>
+                  <h2 class="font-semibold text-gray-800">Web Technologies</h2>
+                  <p class="text-gray-600 text-sm">
+                    Frontend and backend web development technologies
+                  </p>
+                </div>
+              </div>
+
+              <!-- skill -->
+              <div class="flex flex-col gap-2 mb-4 group">
+                <h1>React</h1>
+                <div
+                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/2"
+                ></div>
+
+                <!-- skill placeholder -->
+                <span
+                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                >
+                  >Next.js, React Native, Redux</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 mb-4 group">
+                <h1>HTML/CSS</h1>
+                <div
+                  class="ct-skill-progress after:bg-[#22c55e] after:w-full"
+                ></div>
+
+                <!-- skill placeholder -->
+                <span
+                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                >
+                  >Tailwind, Bootstrap, Sass</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 mb-4 group">
+                <h1>Backend</h1>
+                <div
+                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/2"
+                ></div>
+
+                <!-- skill placeholder -->
+                <span
+                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                >
+                  >Node.js, Express.js, Nest.js, Rest API</span
+                >
+              </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="p-4 border border-gray-200 rounded-xl">
+              <!-- title -->
+              <div
+                class="grid grid-cols-[auto_1fr] gap-4 items-center p-4 rounded-lg border border-gray-200 shadow-sm mb-4"
+              >
+                <i
+                  class="fa-solid fa-database bg-[#eef2ff] p-4 rounded-xl text-[#574fe6]"
+                ></i>
+                <div>
+                  <h2 class="font-semibold text-gray-800">Databases</h2>
+                  <p class="text-gray-600 text-sm">
+                    Database management and optimization
+                  </p>
+                </div>
+              </div>
+
+              <!-- skill -->
+              <div class="flex flex-col gap-2 mb-4 group">
+                <h1>MongoDB</h1>
+                <div
+                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/2"
+                ></div>
+
+                <!-- skill placeholder -->
+                <span
+                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                >
+                </span>
+              </div>
+              <div class="flex flex-col gap-2 mb-4 group">
+                <h1>MySQL</h1>
+                <div
+                  class="ct-skill-progress after:bg-[#3b82f6] after:w-2/3"
+                ></div>
+
+                <!-- skill placeholder -->
+                <span
+                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                >
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- project container -->
+        <div class="mb-20">
+          <h2 class="text-3xl font-semibold tracking-wider mb-14">Projects</h2>
+
+          <!-- projects -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div
+              class="border border-gray-200 rounded-xl flex flex-col justify-between overflow-hidden"
+            >
+              <img
+                src="./assets/thumbnail_fashion_web.webp"
+                alt="project-1"
+                class="w-full h-48 object-cover"
+              />
+
+              <div class="flex flex-col gap-2 p-4 mt-4">
+                <h4 class="text-xl font-semibold">
+                  Fashion Web (E-commerce Platform)
+                </h4>
+
+                <p class="text-gray-600 text-sm">
+                  A full-featured e-commerce platform built with React (Next.js)
+                  and Node.js (Nest.js). The platform allows users to browse
+                  products, add them to their cart, and checkout. The platform
+                  also includes a dashboard for administrators to manage
+                  products, orders, and users. The platform is secure and
+                  user-friendly, with a responsive design that adapts to
+                  different screen sizes.
+                </p>
+
+                <!-- technologies -->
+                <div
+                  class="grid grid-cols-3 lg:grid-cols-4 gap-2 mt-4 text-white"
+                >
+                  <span class="p-2 bg-gray-500 text-sm text-center rounded-full"
+                    >Next.js</span
+                  >
+                  <span class="p-2 bg-gray-500 text-sm text-center rounded-full"
+                    >Node.js</span
+                  >
+                  <span class="p-2 bg-gray-500 text-sm text-center rounded-full"
+                    >React</span
+                  >
+                  <span class="p-2 bg-gray-500 text-sm text-center rounded-full"
+                    >Tailwind</span
+                  >
+                  <span class="p-2 bg-gray-500 text-sm text-center rounded-full"
+                    >MongoDB</span
+                  >
+                </div>
+
+                <!-- links -->
+                <div class="flex gap-4 mt-4">
+                  <a
+                    href="https://github.com/TranNam2712/Fashion_Web"
+                    class="flex items-center gap-2 hover:text-[#574fe6]"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i>GitHub</a
+                  >
+                  <a
+                    href="https://github.com/TranNam2712/Fashion_Web"
+                    class="flex items-center gap-2 hover:text-[#574fe6]"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>Live
+                    Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="border border-gray-200 rounded-xl flex flex-col justify-between overflow-hidden"
+            >
+              <img
+                src="./assets/thumbnail_sneaker_web.png"
+                alt="project-1"
+                class="w-full h-48 object-cover"
+              />
+
+              <div class="flex flex-col gap-2 p-4 mt-4">
+                <h4 class="text-xl font-semibold">
+                  Sneaker Web (E-commerce Platform)
+                </h4>
+
+                <p class="text-gray-600 text-sm">
+                  A full-featured e-commerce platform built with PHP and MySQL.
+                  The platform allows users to browse products, add them to
+                  their cart, and checkout. The platform also includes a
+                  dashboard for administrators to manage products, orders, and
+                  users. The platform is secure and user-friendly, with a
+                  responsive design that adapts to different screen sizes.
+                </p>
+
+                <!-- technologies -->
+                <div class="grid grid-cols-4 gap-2 mt-4 text-white">
+                  <span class="p-2 bg-gray-500 text-sm text-center rounded-full"
+                    >PHP</span
+                  >
+                  <span class="p-2 bg-gray-500 text-sm text-center rounded-full"
+                    >MySQL</span
+                  >
+                </div>
+
+                <!-- links -->
+                <div class="flex gap-4 mt-4">
+                  <a
+                    href="https://github.com/TranNam2712/webBanGiay"
+                    class="flex items-center gap-2 hover:text-[#574fe6]"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i>GitHub</a
+                  >
+                  <a
+                    href="https://github.com/TranNam2712/webBanGiay"
+                    class="flex items-center gap-2 hover:text-[#574fe6]"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>Live
+                    Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- education & certificates container -->
+        <div>
+          <h2 class="text-3xl font-semibold tracking-wider mb-4">Education</h2>
+          <p class="mb-14 text-gray-600 text-[14px]">
+            Academic background and professional certifications
+          </p>
+
+          <!-- education -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 border border-gray-200 rounded-xl">
+              <!-- title -->
+              <div
+                class="grid grid-cols-[auto_1fr] gap-4 items-center p-4 rounded-lg border border-gray-200 shadow-sm mb-8"
+              >
+                <i
+                  class="fa-solid fa-graduation-cap bg-[#eef2ff] p-4 rounded-xl text-[#574fe6]"
+                ></i>
+                <div>
+                  <h2 class="font-semibold text-gray-800">
+                    Bachelor of Information Technology
+                  </h2>
+                </div>
+              </div>
+
+              <!-- content -->
+              <div class="flex flex-col gap-2">
+                <!-- bachelors -->
+                <h3 class="font-semibold">
+                  Bachelor of Information Technology
+                </h3>
+                <span class="text-gray-600 text-base">Saigon University</span>
+                <div class="flex items-center gap-4 text-gray-600 text-sm">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <span>2020 - 2024</span>
+                  <span class="text-[#574fe6] font-semibold">GPA: 2.6/4.0</span>
+                </div>
+
+                <!-- key course -->
+                <h3 class="font-semibold">Key Courses</h3>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2"
+                >
+                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
+                    >Web Development</span
+                  >
+                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
+                    >Database Management</span
+                  >
+                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
+                    >Computer Networks</span
+                  >
+                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
+                    >Object-Oriented Programming</span
+                  >
+                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
+                    >Software Engineering</span
+                  >
+                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
+                    >Network Security</span
+                  >
+                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
+                    >Database Management</span
+                  >
+                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
+                    >Database Management</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300">
+      <!-- Main Footer Content -->
+      <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- About/Contact Section -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-semibold text-white mb-4">Get in Touch</h3>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-sky-500"></i>
+                <a
+                  href="mailto:namtran96hth@gmail.com"
+                  class="hover:text-sky-500 transition-colors"
+                  >namtran96hth@gmail.com</a
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-sky-500"></i>
+                <a
+                  href="tel:+84976290389"
+                  class="hover:text-sky-500 transition-colors"
+                  >(+84) 976 290 389</a
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-sky-500"></i>
+                <p>Bảo Vinh, Long Khánh, Đồng Nai</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-semibold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-sky-500 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-sky-500 transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-sky-500 transition-colors"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-sky-500 transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-sky-500 transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Links -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-semibold text-white mb-4">
+              Connect With Me
+            </h3>
+            <div class="flex gap-4">
+              <a href="#" class="text-2xl hover:text-sky-500 transition-colors">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/TranNam2712"
+                class="text-2xl hover:text-sky-500 transition-colors"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="text-2xl hover:text-sky-500 transition-colors">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-2xl hover:text-sky-500 transition-colors">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-semibold text-white mb-4">Newsletter</h3>
+            <p class="mb-4">Subscribe to receive updates and news</p>
+            <form class="flex flex-col sm:flex-row gap-2">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="bg-gray-800 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500"
+              />
+              <button
+                class="bg-sky-500 text-white px-4 py-2 rounded-md hover:bg-sky-600 transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="border-t border-gray-800">
+        <div class="container mx-auto px-4 py-6">
+          <p class="text-center">© 2025 Trần Nam. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="js/header.js"></script>
+  </body>
+</html>
