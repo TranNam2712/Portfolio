@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,12 +27,12 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="poppins">
-    <div class="root">
+    <div class="root dark:bg-[#101828]">
       <!-- header -->
       <header>
         <!-- navigation -->
         <nav
-          class="h-20 flex justify-between items-center px-4 md:px-20 py-4 fixed top-0 left-0 right-0 bg-white/80 backdrop-blur z-50"
+          class="h-20 flex justify-between items-center px-4 md:px-20 py-4 fixed top-0 left-0 right-0 bg-white/80 backdrop-blur z-50 dark:bg-[#101828]"
         >
           <!-- logo -->
           <a class="text-2xl font-semibold tracking-wider text-sky-600" href="#"
@@ -83,12 +83,18 @@
               >
             </li>
           </ul>
+
+          <!-- <i class="fa-solid fa-moon"></i> -->
+          <i
+            class="fa-solid fa-sun cursor-pointer text-2xl hover:text-sky-600 dark:text-white"
+            id="toggle-mode-button"
+          ></i>
         </nav>
       </header>
 
       <!-- banner -->
       <div
-        class="bg-[#E0ACEF] bg-linear-135 from-[#E0ACEF] to-[#FFAFDF] mt-20 min-h-96 px-20 md:px-20 py-4 flex justify-center items-center"
+        class="not-dark:bg-[#E0ACEF] not-dark:bg-linear-135 not-dark:from-[#E0ACEF] not-dark:to-[#FFAFDF] dark:bg-[#253141] mt-20 min-h-96 px-20 md:px-20 py-4 flex justify-center items-center"
       >
         <div
           class="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-8 h-full w-full lg:w-[80%] mx-auto"
@@ -105,11 +111,15 @@
           <!-- content -->
           <div class="flex-1 text-center md:text-left lg:text-left">
             <!-- info -->
-            <h1 class="text-4xl font-semibold tracking-wider mb-2">Trần Nam</h1>
+            <h1
+              class="text-4xl font-semibold tracking-wider mb-2 dark:text-white"
+            >
+              Trần Nam
+            </h1>
             <p class="font-semibold text-[#4f46e5] mb-4">Web Developer</p>
 
             <!-- description -->
-            <p class="mb-8 text-gray-600">
+            <p class="mb-8 not-dark:text-gray-600 dark:text-white">
               Hello! I'm Trần Nam, an aspiring web developer passionate about
               creating user-friendly websites. While I'm just starting out and
               lack formal experience, I have been learning HTML, CSS, and
@@ -178,17 +188,23 @@
       </div>
 
       <!-- main -->
-      <div class="w-[80%] mx-auto my-20">
+      <div class="w-[80%] mx-auto mt-20 pb-5">
         <!-- skills container -->
         <div class="mb-20">
-          <h2 class="text-3xl font-semibold tracking-wider mb-4">Skills</h2>
-          <p class="mb-14 text-gray-600 text-[14px]">
+          <h2
+            class="text-3xl font-semibold tracking-wider mb-4 dark:text-white"
+          >
+            Skills
+          </h2>
+          <p class="mb-14 not-dark:text-gray-600 dark:text-white text-[14px]">
             A comprehensive overview of my technical expertise and proficiency
             levels
           </p>
 
           <!-- skills -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 dark:text-white"
+          >
             <!-- Programming Languages -->
             <div class="p-4 border border-gray-200 rounded-xl">
               <!-- title -->
@@ -199,10 +215,12 @@
                   class="fa-solid fa-code bg-[#eef2ff] p-4 rounded-xl text-[#574fe6]"
                 ></i>
                 <div>
-                  <h2 class="font-semibold text-gray-800">
+                  <h2
+                    class="font-semibold not-dark:not-dark:text-gray-800 dark:text-white"
+                  >
                     Programming Languages
                   </h2>
-                  <p class="text-gray-600 text-sm">
+                  <p class="not-dark:text-gray-600 dark:text-white text-sm">
                     Core programming languages used in development
                   </p>
                 </div>
@@ -217,7 +235,7 @@
 
                 <!-- skill placeholder -->
                 <span
-                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                  class="not-dark:text-gray-600 dark:text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
                 >
                   >ES6, TypeScript, Node.js</span
                 >
@@ -230,7 +248,7 @@
 
                 <!-- skill placeholder -->
                 <span
-                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                  class="not-dark:text-gray-600 dark:text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
                 >
                   >Django, Flask, FastAPI, Deep Learning</span
                 >
@@ -243,7 +261,7 @@
 
                 <!-- skill placeholder -->
                 <span
-                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                  class="not-dark:text-gray-600 dark:text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
                 >
                   >Spring Boot, Hibernate</span
                 >
@@ -260,8 +278,12 @@
                   class="fa-solid fa-globe bg-[#eef2ff] p-4 rounded-xl text-[#574fe6]"
                 ></i>
                 <div>
-                  <h2 class="font-semibold text-gray-800">Web Technologies</h2>
-                  <p class="text-gray-600 text-sm">
+                  <h2
+                    class="font-semibold not-dark:text-gray-800 dark:text-white"
+                  >
+                    Web Technologies
+                  </h2>
+                  <p class="not-dark:text-gray-600 dark:text-white text-sm">
                     Frontend and backend web development technologies
                   </p>
                 </div>
@@ -276,7 +298,7 @@
 
                 <!-- skill placeholder -->
                 <span
-                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                  class="not-dark:text-gray-600 dark:text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
                 >
                   >Next.js, React Native, Redux</span
                 >
@@ -289,7 +311,7 @@
 
                 <!-- skill placeholder -->
                 <span
-                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                  class="not-dark:text-gray-600 dark:text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
                 >
                   >Tailwind, Bootstrap, Sass</span
                 >
@@ -302,7 +324,7 @@
 
                 <!-- skill placeholder -->
                 <span
-                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                  class="not-dark:text-gray-600 dark:text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
                 >
                   >Node.js, Express.js, Nest.js, Rest API</span
                 >
@@ -319,8 +341,12 @@
                   class="fa-solid fa-database bg-[#eef2ff] p-4 rounded-xl text-[#574fe6]"
                 ></i>
                 <div>
-                  <h2 class="font-semibold text-gray-800">Databases</h2>
-                  <p class="text-gray-600 text-sm">
+                  <h2
+                    class="font-semibold not-dark:text-gray-800 dark:text-white"
+                  >
+                    Databases
+                  </h2>
+                  <p class="not-dark:text-gray-600 dark:text-white text-sm">
                     Database management and optimization
                   </p>
                 </div>
@@ -335,7 +361,7 @@
 
                 <!-- skill placeholder -->
                 <span
-                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                  class="not-dark:text-gray-600 dark:text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
                 >
                 </span>
               </div>
@@ -347,7 +373,7 @@
 
                 <!-- skill placeholder -->
                 <span
-                  class="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                  class="not-dark:text-gray-600 dark:text-white text-sm opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
                 >
                 </span>
               </div>
@@ -357,7 +383,11 @@
 
         <!-- project container -->
         <div class="mb-20">
-          <h2 class="text-3xl font-semibold tracking-wider mb-14">Projects</h2>
+          <h2
+            class="text-3xl font-semibold tracking-wider mb-14 dark:text-white"
+          >
+            Projects
+          </h2>
 
           <!-- projects -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -371,11 +401,11 @@
               />
 
               <div class="flex flex-col gap-2 p-4 mt-4">
-                <h4 class="text-xl font-semibold">
+                <h4 class="text-xl font-semibold dark:text-white">
                   Fashion Web (E-commerce Platform)
                 </h4>
 
-                <p class="text-gray-600 text-sm">
+                <p class="not-dark:text-gray-600 dark:text-white text-sm">
                   A full-featured e-commerce platform built with React (Next.js)
                   and Node.js (Nest.js). The platform allows users to browse
                   products, add them to their cart, and checkout. The platform
@@ -387,7 +417,7 @@
 
                 <!-- technologies -->
                 <div
-                  class="grid grid-cols-3 lg:grid-cols-4 gap-2 mt-4 text-white"
+                  class="grid grid-cols-3 lg:grid-cols-4 gap-2 mt-4 dark:text-white"
                 >
                   <span class="p-2 bg-gray-500 text-sm text-center rounded-full"
                     >Next.js</span
@@ -407,7 +437,7 @@
                 </div>
 
                 <!-- links -->
-                <div class="flex gap-4 mt-4">
+                <div class="flex gap-4 mt-4 dark:text-white">
                   <a
                     href="https://github.com/TranNam2712/Fashion_Web"
                     class="flex items-center gap-2 hover:text-[#574fe6]"
@@ -435,11 +465,11 @@
               />
 
               <div class="flex flex-col gap-2 p-4 mt-4">
-                <h4 class="text-xl font-semibold">
+                <h4 class="text-xl font-semibold dark:text-white">
                   Sneaker Web (E-commerce Platform)
                 </h4>
 
-                <p class="text-gray-600 text-sm">
+                <p class="not-dark:text-gray-600 dark:text-white text-sm">
                   A full-featured e-commerce platform built with PHP and MySQL.
                   The platform allows users to browse products, add them to
                   their cart, and checkout. The platform also includes a
@@ -459,7 +489,7 @@
                 </div>
 
                 <!-- links -->
-                <div class="flex gap-4 mt-4">
+                <div class="flex gap-4 mt-4 dark:text-white">
                   <a
                     href="https://github.com/TranNam2712/webBanGiay"
                     class="flex items-center gap-2 hover:text-[#574fe6]"
@@ -482,8 +512,12 @@
 
         <!-- education & certificates container -->
         <div>
-          <h2 class="text-3xl font-semibold tracking-wider mb-4">Education</h2>
-          <p class="mb-14 text-gray-600 text-[14px]">
+          <h2
+            class="text-3xl font-semibold tracking-wider mb-4 dark:text-white"
+          >
+            Education
+          </h2>
+          <p class="mb-14 not-dark:text-gray-600 dark:text-white text-[14px]">
             Academic background and professional certifications
           </p>
 
@@ -498,7 +532,9 @@
                   class="fa-solid fa-graduation-cap bg-[#eef2ff] p-4 rounded-xl text-[#574fe6]"
                 ></i>
                 <div>
-                  <h2 class="font-semibold text-gray-800">
+                  <h2
+                    class="font-semibold not-dark:text-gray-800 dark:text-white"
+                  >
                     Bachelor of Information Technology
                   </h2>
                 </div>
@@ -507,18 +543,22 @@
               <!-- content -->
               <div class="flex flex-col gap-2">
                 <!-- bachelors -->
-                <h3 class="font-semibold">
+                <h3 class="font-semibold dark:text-white">
                   Bachelor of Information Technology
                 </h3>
-                <span class="text-gray-600 text-base">Saigon University</span>
-                <div class="flex items-center gap-4 text-gray-600 text-sm">
+                <span class="not-dark:text-gray-600 dark:text-white text-base"
+                  >Saigon University</span
+                >
+                <div
+                  class="flex items-center gap-4 not-dark:text-gray-600 dark:text-white text-sm"
+                >
                   <i class="fa-solid fa-calendar-days"></i>
                   <span>2020 - 2024</span>
                   <span class="text-[#574fe6] font-semibold">GPA: 2.6/4.0</span>
                 </div>
 
                 <!-- key course -->
-                <h3 class="font-semibold">Key Courses</h3>
+                <h3 class="font-semibold dark:text-white">Key Courses</h3>
                 <div
                   class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2"
                 >
@@ -555,7 +595,9 @@
     </div>
 
     <!-- footer -->
-    <footer class="bg-gray-900 text-gray-300">
+    <footer
+      class="bg-gray-900 text-gray-300 dark:border-t dark:border-gray-700"
+    >
       <!-- Main Footer Content -->
       <div class="container mx-auto px-4 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -673,5 +715,6 @@
 
     <!-- script -->
     <script src="js/header.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>
