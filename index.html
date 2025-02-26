@@ -23,6 +23,15 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -94,32 +103,40 @@
 
       <!-- banner -->
       <div
-        class="not-dark:bg-[#E0ACEF] not-dark:bg-linear-135 not-dark:from-[#E0ACEF] not-dark:to-[#FFAFDF] dark:bg-[#253141] mt-20 min-h-96 px-20 md:px-20 py-4 flex justify-center items-center"
+        class="not-dark:bg-[#E0ACEF] not-dark:bg-linear-135 not-dark:from-[#E0ACEF] not-dark:to-[#FFAFDF] dark:bg-[#253141] mt-20 min-h-96 px-20 md:px-20 py-4 flex justify-center items-center animate__animated animate__fadeIn"
       >
         <div
           class="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-8 h-full w-full lg:w-[80%] mx-auto"
         >
-          <!-- avatar -->
-          <div class="border-4 border-white rounded-full shadow-lg">
+          <!-- avatar with zoom entrance -->
+          <div
+            class="border-4 border-white rounded-full shadow-lg animate__animated animate__zoomInDown animate__delay-1s"
+          >
             <img
               src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-1/480575187_1338945550460327_76545680919555457_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeF6tVJVXXfo3cDDoDkKvcCp6n7PFQxn8WDqfs8VDGfxYIchwk25CpiSYZHCvIrIh7lIEqhYJHKAnr5euEfVnHDR&_nc_ohc=KH3FBHrXuewQ7kNvgFeHQeO&_nc_oc=Adi8U_MB6tDFDBPYqx33lkNa3_6XxSWOpk3yan8oWDZ7FZRF0MDd9JSv36PYIJFj0XGT2NIlNZN5IX_B5ZHYv2Z6&_nc_zt=24&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=AFIH_t8Btt1SI3e-GOtd9KS&oh=00_AYAOFY7FsC4ixkQUGazG_XOGl-eZpPe5a3RIKkrhy8noqQ&oe=67C3C9D0"
               alt=""
-              class="w-40 h-40 rounded-full"
+              class="w-40 h-40 rounded-full hover:animate__animated hover:animate__pulse hover:animate__infinite"
             />
           </div>
 
           <!-- content -->
           <div class="flex-1 text-center md:text-left lg:text-left">
-            <!-- info -->
+            <!-- info with slide entrance -->
             <h1
-              class="text-4xl font-semibold tracking-wider mb-2 dark:text-white"
+              class="text-4xl font-semibold tracking-wider mb-2 dark:text-white animate__animated animate__slideInRight animate__delay-1s"
             >
               Trần Nam
             </h1>
-            <p class="font-semibold text-[#4f46e5] mb-4">Web Developer</p>
+            <p
+              class="font-semibold text-[#4f46e5] mb-4 animate__animated animate__slideInRight animate__delay-1s"
+            >
+              Web Developer
+            </p>
 
-            <!-- description -->
-            <p class="mb-8 not-dark:text-gray-600 dark:text-white">
+            <!-- description with fade entrance -->
+            <p
+              class="mb-8 not-dark:text-gray-600 dark:text-white animate__animated animate__fadeInUp animate__delay-2s"
+            >
               Hello! I'm Trần Nam, an aspiring web developer passionate about
               creating user-friendly websites. While I'm just starting out and
               lack formal experience, I have been learning HTML, CSS, and
@@ -127,59 +144,74 @@
               to apply my skills and grow in a collaborative environment.
             </p>
 
-            <!-- social -->
+            <!-- social with bounce entrance -->
             <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6 text-[14px] lg:text-lg"
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6 text-[14px] lg:text-lg animate__animated animate__fadeInUp animate__delay-2s"
             >
               <!-- email -->
-              <a class="ct-banner-social" href="mailto:namtran96hth@gmail.com">
-                <i class="fa-regular fa-envelope text-gray-600"></i>
-                <span class="text-gray-600">namtran96hth@gmail.com</span>
+              <a
+                class="ct-banner-social hover:animate__animated hover:animate__headShake"
+                href="mailto:namtran96hth@gmail.com"
+              >
+                <i
+                  class="fa-regular fa-envelope text-gray-600 dark:text-gray-300"
+                ></i>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >namtran96hth@gmail.com</span
+                >
               </a>
 
               <!-- phone -->
               <a
-                class="ct-banner-social"
+                class="ct-banner-social hover:animate__animated hover:animate__headShake"
                 href="tel:+84976290389"
                 target="_blank"
               >
-                <i class="fa-solid fa-phone text-gray-600"></i>
-                <span class="text-gray-600">(+84) 976 290 389</span>
+                <i
+                  class="fa-solid fa-phone text-gray-600 dark:text-gray-300"
+                ></i>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >(+84) 976 290 389</span
+                >
               </a>
 
               <!-- github -->
               <a
-                class="ct-banner-social"
+                class="ct-banner-social hover:animate__animated hover:animate__headShake"
                 href="https://github.com/TranNam2712"
                 target="_blank"
               >
-                <i class="fa-brands fa-github text-gray-600"></i>
-                <span class="text-gray-600">TranNam2712</span>
+                <i
+                  class="fa-brands fa-github text-gray-600 dark:text-gray-300"
+                ></i>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >TranNam2712</span
+                >
               </a>
             </div>
 
-            <!-- skills -->
+            <!-- skills with bounce entrance -->
             <div
               class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 font-semibold"
             >
               <span
-                class="p-1 bg-[#eef2ff] block text-center text-[#574fe6] rounded-full"
+                class="p-1 bg-[#eef2ff] dark:bg-gray-800 block text-center text-[#574fe6] rounded-full animate__animated animate__bounceIn animate__delay-3s hover:animate__animated hover:animate__rubberBand"
                 >React</span
               >
               <span
-                class="p-1 bg-[#eef2ff] block text-center text-[#574fe6] rounded-full"
+                class="p-1 bg-[#eef2ff] dark:bg-gray-800 block text-center text-[#574fe6] rounded-full animate__animated animate__bounceIn animate__delay-3s hover:animate__animated hover:animate__rubberBand"
                 >Node.js</span
               >
               <span
-                class="p-1 bg-[#eef2ff] block text-center text-[#574fe6] rounded-full"
+                class="p-1 bg-[#eef2ff] dark:bg-gray-800 block text-center text-[#574fe6] rounded-full animate__animated animate__bounceIn animate__delay-3s hover:animate__animated hover:animate__rubberBand"
                 >TypeScript</span
               >
               <span
-                class="p-1 bg-[#eef2ff] block text-center text-[#574fe6] rounded-full"
+                class="p-1 bg-[#eef2ff] dark:bg-gray-800 block text-center text-[#574fe6] rounded-full animate__animated animate__bounceIn animate__delay-3s hover:animate__animated hover:animate__rubberBand"
                 >MongoDB</span
               >
               <span
-                class="p-1 bg-[#eef2ff] block text-center text-[#574fe6] rounded-full"
+                class="p-1 bg-[#eef2ff] dark:bg-gray-800 block text-center text-[#574fe6] rounded-full animate__animated animate__bounceIn animate__delay-3s hover:animate__animated hover:animate__rubberBand"
                 >Tailwind</span
               >
             </div>
@@ -193,10 +225,14 @@
         <div class="mb-20">
           <h2
             class="text-3xl font-semibold tracking-wider mb-4 dark:text-white"
+            data-animate="animate__fadeInDown"
           >
             Skills
           </h2>
-          <p class="mb-14 not-dark:text-gray-600 dark:text-white text-[14px]">
+          <p
+            class="mb-14 not-dark:text-gray-600 dark:text-white text-[14px]"
+            data-animate="animate__fadeIn"
+          >
             A comprehensive overview of my technical expertise and proficiency
             levels
           </p>
@@ -206,7 +242,10 @@
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 dark:text-white"
           >
             <!-- Programming Languages -->
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div
+              class="p-4 border border-gray-200 rounded-xl"
+              data-animate="animate__fadeInLeft"
+            >
               <!-- title -->
               <div
                 class="grid grid-cols-[auto_1fr] gap-4 items-center p-4 rounded-lg border border-gray-200 shadow-sm mb-4"
@@ -216,7 +255,7 @@
                 ></i>
                 <div>
                   <h2
-                    class="font-semibold not-dark:not-dark:text-gray-800 dark:text-white"
+                    class="font-semibold not-dark:text-gray-800 dark:text-white"
                   >
                     Programming Languages
                   </h2>
@@ -228,9 +267,15 @@
 
               <!-- skill -->
               <div class="flex flex-col gap-2 mb-4 group">
-                <h1>JavaScript</h1>
+                <h1
+                  class="opacity-0"
+                  data-animate="animate__fadeInRight animate__delay-1s"
+                >
+                  JavaScript
+                </h1>
                 <div
-                  class="ct-skill-progress after:bg-[#22c55e] after:w-full"
+                  class="ct-skill-progress after:bg-[#22c55e] after:w-full opacity-0"
+                  data-animate="animate__slideInLeft animate__delay-1s"
                 ></div>
 
                 <!-- skill placeholder -->
@@ -241,9 +286,15 @@
                 >
               </div>
               <div class="flex flex-col gap-2 mb-4 group">
-                <h1>Python</h1>
+                <h1
+                  class="opacity-0"
+                  data-animate="animate__fadeInRight animate__delay-1s"
+                >
+                  Python
+                </h1>
                 <div
-                  class="ct-skill-progress after:bg-[#3b82f6] after:w-2/3"
+                  class="ct-skill-progress after:bg-[#3b82f6] after:w-2/3 opacity-0"
+                  data-animate="animate__slideInLeft animate__delay-1s"
                 ></div>
 
                 <!-- skill placeholder -->
@@ -254,9 +305,15 @@
                 >
               </div>
               <div class="flex flex-col gap-2 mb-4 group">
-                <h1>Java</h1>
+                <h1
+                  class="opacity-0"
+                  data-animate="animate__fadeInRight animate__delay-1s"
+                >
+                  Java
+                </h1>
                 <div
-                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/3"
+                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/3 opacity-0"
+                  data-animate="animate__slideInLeft animate__delay-1s"
                 ></div>
 
                 <!-- skill placeholder -->
@@ -269,7 +326,10 @@
             </div>
 
             <!-- Web Technologies -->
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div
+              class="p-4 border border-gray-200 rounded-xl"
+              data-animate="animate__fadeInRight"
+            >
               <!-- title -->
               <div
                 class="grid grid-cols-[auto_1fr] gap-4 items-center p-4 rounded-lg border border-gray-200 shadow-sm mb-4"
@@ -291,9 +351,15 @@
 
               <!-- skill -->
               <div class="flex flex-col gap-2 mb-4 group">
-                <h1>React</h1>
+                <h1
+                  class="opacity-0"
+                  data-animate="animate__fadeInRight animate__delay-1s"
+                >
+                  React
+                </h1>
                 <div
-                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/2"
+                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/2 opacity-0"
+                  data-animate="animate__slideInLeft animate__delay-1s"
                 ></div>
 
                 <!-- skill placeholder -->
@@ -304,9 +370,15 @@
                 >
               </div>
               <div class="flex flex-col gap-2 mb-4 group">
-                <h1>HTML/CSS</h1>
+                <h1
+                  class="opacity-0"
+                  data-animate="animate__fadeInRight animate__delay-1s"
+                >
+                  HTML/CSS
+                </h1>
                 <div
-                  class="ct-skill-progress after:bg-[#22c55e] after:w-full"
+                  class="ct-skill-progress after:bg-[#22c55e] after:w-full opacity-0"
+                  data-animate="animate__slideInLeft animate__delay-1s"
                 ></div>
 
                 <!-- skill placeholder -->
@@ -317,9 +389,15 @@
                 >
               </div>
               <div class="flex flex-col gap-2 mb-4 group">
-                <h1>Backend</h1>
+                <h1
+                  class="opacity-0"
+                  data-animate="animate__fadeInRight animate__delay-1s"
+                >
+                  Backend
+                </h1>
                 <div
-                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/2"
+                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/2 opacity-0"
+                  data-animate="animate__slideInLeft animate__delay-1s"
                 ></div>
 
                 <!-- skill placeholder -->
@@ -332,7 +410,10 @@
             </div>
 
             <!-- Databases -->
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div
+              class="p-4 border border-gray-200 rounded-xl"
+              data-animate="animate__fadeInUp"
+            >
               <!-- title -->
               <div
                 class="grid grid-cols-[auto_1fr] gap-4 items-center p-4 rounded-lg border border-gray-200 shadow-sm mb-4"
@@ -354,9 +435,15 @@
 
               <!-- skill -->
               <div class="flex flex-col gap-2 mb-4 group">
-                <h1>MongoDB</h1>
+                <h1
+                  class="opacity-0"
+                  data-animate="animate__fadeInRight animate__delay-1s"
+                >
+                  MongoDB
+                </h1>
                 <div
-                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/2"
+                  class="ct-skill-progress after:bg-[#574fe6] after:w-1/2 opacity-0"
+                  data-animate="animate__slideInLeft animate__delay-1s"
                 ></div>
 
                 <!-- skill placeholder -->
@@ -366,9 +453,15 @@
                 </span>
               </div>
               <div class="flex flex-col gap-2 mb-4 group">
-                <h1>MySQL</h1>
+                <h1
+                  class="opacity-0"
+                  data-animate="animate__fadeInRight animate__delay-1s"
+                >
+                  MySQL
+                </h1>
                 <div
-                  class="ct-skill-progress after:bg-[#3b82f6] after:w-2/3"
+                  class="ct-skill-progress after:bg-[#3b82f6] after:w-2/3 opacity-0"
+                  data-animate="animate__slideInLeft animate__delay-1s"
                 ></div>
 
                 <!-- skill placeholder -->
@@ -385,6 +478,7 @@
         <div class="mb-20">
           <h2
             class="text-3xl font-semibold tracking-wider mb-14 dark:text-white"
+            data-animate="animate__fadeInDown"
           >
             Projects
           </h2>
@@ -393,14 +487,17 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div
               class="border border-gray-200 rounded-xl flex flex-col justify-between overflow-hidden"
+              data-animate="animate__fadeInLeft"
             >
               <img
                 src="./assets/thumbnail_fashion_web.webp"
                 alt="project-1"
-                class="w-full h-48 object-cover"
+                class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
               />
 
-              <div class="flex flex-col gap-2 p-4 mt-4">
+              <div
+                class="flex flex-col gap-2 p-4 mt-4 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+              >
                 <h4 class="text-xl font-semibold dark:text-white">
                   Fashion Web (E-commerce Platform)
                 </h4>
@@ -457,14 +554,17 @@
             </div>
             <div
               class="border border-gray-200 rounded-xl flex flex-col justify-between overflow-hidden"
+              data-animate="animate__fadeInRight"
             >
               <img
                 src="./assets/thumbnail_sneaker_web.png"
                 alt="project-1"
-                class="w-full h-48 object-cover"
+                class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
               />
 
-              <div class="flex flex-col gap-2 p-4 mt-4">
+              <div
+                class="flex flex-col gap-2 p-4 mt-4 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+              >
                 <h4 class="text-xl font-semibold dark:text-white">
                   Sneaker Web (E-commerce Platform)
                 </h4>
@@ -510,20 +610,27 @@
           </div>
         </div>
 
-        <!-- education & certificates container -->
+        <!-- education container -->
         <div>
           <h2
             class="text-3xl font-semibold tracking-wider mb-4 dark:text-white"
+            data-animate="animate__fadeInDown"
           >
             Education
           </h2>
-          <p class="mb-14 not-dark:text-gray-600 dark:text-white text-[14px]">
+          <p
+            class="mb-14 not-dark:text-gray-600 dark:text-white text-[14px]"
+            data-animate="animate__fadeIn"
+          >
             Academic background and professional certifications
           </p>
 
           <!-- education -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div
+              class="p-4 border border-gray-200 rounded-xl"
+              data-animate="animate__fadeInUp"
+            >
               <!-- title -->
               <div
                 class="grid grid-cols-[auto_1fr] gap-4 items-center p-4 rounded-lg border border-gray-200 shadow-sm mb-8"
@@ -562,29 +669,47 @@
                 <div
                   class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2"
                 >
-                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
-                    >Web Development</span
+                  <span
+                    class="p-2 bg-gray-200 text-sm text-center rounded-full hover:bg-gray-300 transition-colors opacity-0"
+                    data-animate="animate__bounceIn animate__delay-1s"
                   >
-                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
-                    >Database Management</span
+                    Web Development</span
                   >
-                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
-                    >Computer Networks</span
+                  <span
+                    class="p-2 bg-gray-200 text-sm text-center rounded-full hover:bg-gray-300 transition-colors opacity-0"
+                    data-animate="animate__bounceIn animate__delay-1s"
                   >
-                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
-                    >Object-Oriented Programming</span
+                    Database Management</span
                   >
-                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
-                    >Software Engineering</span
+                  <span
+                    class="p-2 bg-gray-200 text-sm text-center rounded-full hover:bg-gray-300 transition-colors opacity-0"
+                    data-animate="animate__bounceIn animate__delay-1s"
                   >
-                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
-                    >Network Security</span
+                    Computer Networks</span
                   >
-                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
-                    >Database Management</span
+                  <span
+                    class="p-2 bg-gray-200 text-sm text-center rounded-full hover:bg-gray-300 transition-colors opacity-0"
+                    data-animate="animate__bounceIn animate__delay-1s"
                   >
-                  <span class="p-2 bg-gray-200 text-sm text-center rounded-full"
-                    >Database Management</span
+                    Object-Oriented Programming</span
+                  >
+                  <span
+                    class="p-2 bg-gray-200 text-sm text-center rounded-full hover:bg-gray-300 transition-colors opacity-0"
+                    data-animate="animate__bounceIn animate__delay-1s"
+                  >
+                    Software Engineering</span
+                  >
+                  <span
+                    class="p-2 bg-gray-200 text-sm text-center rounded-full hover:bg-gray-300 transition-colors opacity-0"
+                    data-animate="animate__bounceIn animate__delay-1s"
+                  >
+                    Network Security</span
+                  >
+                  <span
+                    class="p-2 bg-gray-200 text-sm text-center rounded-full hover:bg-gray-300 transition-colors opacity-0"
+                    data-animate="animate__bounceIn animate__delay-1s"
+                  >
+                    Database Management</span
                   >
                 </div>
               </div>
@@ -716,5 +841,6 @@
     <!-- script -->
     <script src="js/header.js"></script>
     <script src="js/darkmode.js"></script>
+    <script src="js/scrollAnimations.js"></script>
   </body>
 </html>
